@@ -56,29 +56,29 @@ $route_prefix = $route_name[0];
                                     <a href="{{ route('about.meeting') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'meeting' ? 'active' : '' }}">Meeting</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Introduction.html" class="dd-color text-decoration-none text-dark">introduction</a>
+                                    <a href="{{ route('about.introduction') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'introduction' ? 'active' : '' }}">introduction</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Mandate.html" class="dd-color text-decoration-none text-dark">Mandate</a>
+                                    <a href="{{ route('about.mandate') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'mandate' ? 'active' : '' }}">Mandate</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/governance.html" class="dd-color text-decoration-none text-dark">governance</a>
+                                    <a href="{{ route('about.governance') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'governance' ? 'active' : '' }}">governance</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Role and Responsibility.html" class="dd-color text-decoration-none text-dark">Roles and Responsibility</a>
+                                    <a href="{{ route('about.role-and-responsibility') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'role-and-responsibility' ? 'active' : '' }}">Roles and Responsibility</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Core-Principles.html" class="dd-color text-decoration-none text-dark">
+                                    <a href="{{ route('about.core-principle') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'core-principle' ? 'active' : '' }}">
                                         Core Principles</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Structure.html" class="dd-color text-decoration-none text-dark">Structure</a>
+                                    <a href="{{ route('about.structure') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'structure' ? 'active' : '' }}">Structure</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Office-Bearers.html" class="dd-color text-decoration-none text-dark">Office Bearers</a>
+                                    <a href="{{ route('about.office-bearers') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'office-bearers' ? 'active' : '' }}">Office Bearers</a>
                                 </li>
                                 <li class="dropdown-hvr">
-                                    <a href="/drop-down-menu/Secretariat.html" class="dd-color text-decoration-none text-dark">
+                                    <a href="{{ route('about.secretariat') }}" class="dd-color text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'secretariat' ? 'active' : '' }}">
                                         Secretariat</a>
                                 </li>
                                 <li class="dropdown-hvr d-flex justify-content-between position-relative">
@@ -98,19 +98,19 @@ $route_prefix = $route_name[0];
 
                         <!-- Committees  -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link fw-medium fs-6 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link fw-medium fs-6 text-white {{ isset($route_name[1]) && $route_name[1] == 'committess' || isset($route_name[1]) && $route_name[1] == 'member-list' ||  isset($route_name[1]) && $route_name[1] == 'term-of-reference' ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Committees
                                 <i class="fa-solid fa-angle-down ps-1"></i>
                             </a>
                             <ul class="dropdown-menu-all rounded-2 border-0 position-absolute list-unstyled ps-2">
                                 <li class="dropdown-hvr d-flex justify-content-between position-relative">
-                                    <a href="#" class="dd-color text-decoration-none text-dark py-2">
+                                    <a href="#" class="dd-color text-decoration-none text-dark py-2 {{ isset($route_name[1]) && $route_name[1] == 'member-list' || $route_name[1] == 'term-of-reference'   ? 'active' : '' }} ">
                                         Oversight Committee</a>
                                     <i class="mt-2 me-3 fa-solid fa-angle-right"></i>
                                     <!-- sub dropdown About CCC -->
                                     <ul class="sub-dropdown rounded-3 ps-2 list-unstyled">
-                                        <li class="sub-dropdown-hvr pt-3 "><a href="/drop-down-menu/Member list.html" class="text-decoration-none text-dark">CCC-OC Member List</a></li>
-                                        <li class="sub-dropdown-hvr pb-3"><a href="/drop-down-menu/Terms of Reference.html" class="text-decoration-none text-dark">
+                                        <li class="sub-dropdown-hvr pt-3 "><a href="{{ route('committess.member-list') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'member-list' ? 'active' : '' }}">CCC-OC Member List</a></li>
+                                        <li class="sub-dropdown-hvr pb-3"><a href="{{ route('committess.term-of-reference') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'term-of-reference' ? 'active' : '' }}">
                                                 CCC-OC Terms of Reference</a> </li>
                                     </ul>
 
@@ -122,24 +122,24 @@ $route_prefix = $route_name[0];
 
                         <!-- Document  -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link fw-medium fs-6 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link fw-medium fs-6 text-white {{ isset($route_name[1]) && $route_name[1] == 'document' || isset($route_name[1]) && $route_name[1] == 'ccc-oversight-plan' ||  isset($route_name[1]) && $route_name[1] == 'ccc-governance' ||  isset($route_name[1]) && $route_name[1] == 'other' ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Document
                                 <i class="fa-solid fa-angle-down ps-1"></i>
                             </a>
                             <ul class="dropdown-menu-all rounded-2 border-0 position-absolute list-unstyled ps-2">
                                 <div class="control-sub-dropdown-hvr">
                                     <li class="dropdown-hvr d-flex justify-content-between position-relative">
-                                        <a href="#" class="dd-color text-decoration-none text-dark pt-2">
+                                        <a href="#" class="dd-color text-decoration-none text-dark pt-2 {{ isset($route_name[1]) && $route_name[1] == 'ccc-oversight-plan' || $route_name[1] == 'ccc-governance' || $route_name[1] == 'other' ? 'active' : '' }}">
                                             CCC Document</a>
                                         <i class="mt-2 me-3 fa-solid fa-angle-right"></i>
                                         <!-- sub dropdown About CCC -->
                                         <ul class="sub-dropdown rounded-3 ps-2 list-unstyled">
-                                            <li class="sub-dropdown-hvr pt-3"><a href="/drop-down-menu/CCC Oversight Plan.html" class="text-decoration-none text-dark">
+                                            <li class="sub-dropdown-hvr pt-3"><a href="{{ route('document.ccc-oversight-plan') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'ccc-oversight-plan' ? 'active' : '' }}">
                                                     CCC Oversight Plan</a> </li>
-                                            <li class="sub-dropdown-hvr"><a href="/drop-down-menu/CCC Governance Manual.html" class="text-decoration-none text-dark">
+                                            <li class="sub-dropdown-hvr"><a href="{{ route('document.ccc-governance') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'ccc-governance' ? 'active' : '' }}">
                                                     CCC Governance Manual 25072019_VH-9Aug2019</li>
-                                            <li class="sub-dropdown-hvr pb-3"><a href="/drop-down-menu/Others.html" class="text-decoration-none text-dark">
-                                                    Others</a> </li>
+                                            <li class="sub-dropdown-hvr pb-3"><a href="{{ route('document.other') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'other'  ? 'active' : '' }}">
+                                                Others</a> </li>
                                         </ul>
                                         <!-- end sub-dropdown -->
                                     </li>
@@ -151,9 +151,9 @@ $route_prefix = $route_name[0];
                                     <i class="mt-2 me-3 fa-solid fa-angle-right"></i>
                                     <!-- sub dropdown About CCC -->
                                     <ul class="sub-dropdown rounded-3 ps-2 list-unstyled">
-                                        <li class="sub-dropdown-hvr pt-3"><a href="/drop-down-menu/CCC OC.html" class="text-decoration-none text-dark">
+                                        <li class="sub-dropdown-hvr pt-3"><a href="{{ route('document.ccc-oc') }}" class="text-decoration-none text-dark">
                                                 CCC-OC</a> </li>
-                                        <li class="sub-dropdown-hvr pb-3"><a href="/drop-down-menu/CCC.html" class="text-decoration-none text-dark">
+                                        <li class="sub-dropdown-hvr pb-3"><a href="{{ route('document.ccc') }}" class="text-decoration-none text-dark">
                                                 CCC</a> </li>
                                     </ul>
                                     <!-- end sub-dropdown -->
@@ -164,9 +164,9 @@ $route_prefix = $route_name[0];
                                     <i class="mt-2 me-3 fa-solid fa-angle-right"></i>
                                     <!-- sub dropdown About CCC -->
                                     <ul class="sub-dropdown rounded-3 ps-2 list-unstyled">
-                                        <li class="sub-dropdown-hvr pt-3"><a href="/drop-down-menu/CCC-OC Oversight Visit.html" class="text-decoration-none text-dark">
+                                        <li class="sub-dropdown-hvr pt-3"><a href="{{ route('document.ccc-oc-oversight') }}" class="text-decoration-none text-dark">
                                                 CCC-OC Oversight Visit</a> </li>
-                                        <li class="sub-dropdown-hvr pb-3"><a href="/drop-down-menu/CCC Retreat Reports.html" class="text-decoration-none text-dark">
+                                        <li class="sub-dropdown-hvr pb-3"><a href="{{route('document.ccc-retreat-report')}}" class="text-decoration-none text-dark">
                                                 CCC Retreat Reports</a> </li>
                                     </ul>
                                     <!-- end sub-dropdown -->

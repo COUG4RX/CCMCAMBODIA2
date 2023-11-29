@@ -5,5 +5,6 @@
 
 @yield('content')
 
+@include('layout.offcanvas')
 @include('layout.footer')
 @endsection

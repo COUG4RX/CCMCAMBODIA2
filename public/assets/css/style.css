@@ -646,6 +646,12 @@ input[type="search"]::-ms-clear {
   background-color: #396b8c;
   border: 1px solid #f5f5f5;
 }
+.mySwiper{
+  height: auto !important;
+}
+.swiper-wrapper{
+  height: auto !important;
+}
 .head-titles h2 {
   color: #396b8c;
   font-family: "Roboto-bold", sans-serif !important;
