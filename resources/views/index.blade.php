@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CCCMCAMBODIA</title>
+    <link rel="icon" type="image/x-icon" href="{{asset('assets/img/icon-website/CCM-Logo-with-Transparent-Background-1000-px512.png')}}">
     <!-- JQuery -->
     <script src="{{ asset('assets/js/jQuary.js')}}"></script>
     <!-- fonts  -->
