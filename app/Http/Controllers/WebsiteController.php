@@ -58,7 +58,7 @@ class WebsiteController extends Controller
         return view('pages.document.ccc-document.ccc-oversight-plan');
     }
     public function documentGovernance (){
-        return view('pages.document.ccc-governance');
+        return view('pages.document.ccc-document.ccc-governance');
     }
     public function documentOther (){
         return view('pages.document.ccc-document.other');
@@ -74,5 +74,65 @@ class WebsiteController extends Controller
     }
     public function documentCccRetreatReport (){
         return view('pages.document.reports.ccc-oc-oversight');
+    }
+    public function GfatmGrantTbHiv (){
+        return view('pages.gfatm-grant.tb-hiv');
+    }
+    public function GfatmGrantTb (){
+        return view('pages.gfatm-grant.tb');
+    }
+    public function GfatmGrantHiv (){
+        return view('pages.gfatm-grant.hiv');
+    }
+    public function GfatmGrantMalaria (){
+        return view('pages.gfatm-grant.malaria');
+    }
+    public function GfatmGrantRssh (){
+        return view('pages.gfatm-grant.rssh');
+    }
+    public function GfatmGrantMultiCountries (){
+        return view('pages.gfatm-grant.multi-countries-tb-migrant');
+    }
+    public function PrinciplePudr (){
+        return view('pages.principle-recipients.Principal-Recipient-MEF-MoH-LIT.pudr');
+    }
+    public function PrincipleManagementLetter (){
+        return view('pages.principle-recipients.Principal-Recipient-MEF-MoH-LIT.management-letter');
+    }
+    public function PrincipleAuditReport (){
+        return view('pages.principle-recipients.Principal-Recipient-MEF-MoH-LIT.audit-report');
+    }
+    public function PrincipleUnopsPudr (){
+        return view('pages.principle-recipients.Principle-Recipient-Unops.unops-pudr');
+    }
+    public function PrincipleUnopsManagementLetter (){
+        return view('pages.principle-recipients.Principle-Recipient-Unops.unops-management-letter');
+    }
+    public function PrincipleUnopsAuditReport (){
+        return view('pages.principle-recipients.Principle-Recipient-Unops.unops-audit-report');
+    }
+    public function Activity (){
+        return view('pages.activity.activity');
+    }
+    public function Career (){
+        return view('pages.career.career');
+    }
+    public function MediaNews (){
+        return view('pages.media.news');
+    }
+    public function MediaVideo (){
+        return view('pages.media.video');
+    }
+    public function MediaGallary (){
+        return view('pages.media.gallary');
+    }
+    public function ContactUs (){
+        return view('pages.contact-us.contact-us');
+    }
+    public function ViewDetail01 (){
+        return view('pages.view-detail.view-detail01');
+    }
+    public function ViewDetail02 (){
+        return view('pages.view-detail.view-detail02');
     }
 }

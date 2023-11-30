@@ -1,16 +1,20 @@
-
+<?php
+$route_name = request()->route()->getName();
+$route_name = explode('.', $route_name);
+$route_prefix = $route_name[0];
+?>
 
 <div class="offcanvas offcanvas-start gap-0" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header d-flex justify-content-center">
       <div class="offcanvas-title offcanvas-banner"  id="offcanvasExampleLabel">
-        <img src="/img/Logo/logo-website.png" alt="">
+        <img src="{{asset('assets/img/Logo/logo-website.png')}}" alt="">
       </div>
       <i type="button" class="fa-solid fa-xmark btn-close-custom fs-3 fw-bold p-2" style="color: #fafafa;" data-bs-dismiss="offcanvas" aria-label="Close">
         </i>
     </div>
     <div class="offcanvas-body">
       <div class="dropdown-offcanvas">
-        <a href="{{ route('homepage') }}" class="p-1 pointer-event text-decoration-none"><i class="fa-solid fa-house me-2 "></i>Home</a>
+        <a href="{{ route('homepage') }}" class="p-1 pointer-event text-decoration-none {{ isset($route_name[1]) && $route_name[1] == 'homepage' ? 'active' : '' }}"><i class="fa-solid fa-house me-2 "></i>Home</a>
       </div>
 
       <!-- drop down offcanvas  -->
@@ -24,7 +28,7 @@
         <ul class="dropdown-menu ms-4 dropdown-menu-offcanvas" id="dNone">
           <li><a class="dropdown-item" href="{{ route('about.meeting') }}"><i class="fa-solid fa-angle-right me-2"></i> <span class="">Meeting</span></a></li>
           <li><a class="dropdown-item" href="{{ route('about.introduction') }}"><i class="fa-solid fa-angle-right me-2"></i> introduction</a></li>
-          <li><a class="dropdown-item" href="/drop-down-menu/Mandate.html"><i class="fa-solid fa-angle-right me-2"></i> Mandate</a></li>
+          <li><a class="dropdown-item" href="{{ route('about.mandate') }}"><i class="fa-solid fa-angle-right me-2"></i> Mandate</a></li>
           <li><a class="dropdown-item" href="/drop-down-menu/governance.html"><i class="fa-solid fa-angle-right me-2"></i> governance</a></li>
           <li><a class="dropdown-item" href="/drop-down-menu/Role and Responsibility.html"><i class="fa-solid fa-angle-right me-2"></i> Roles and Responsibility</a></li>
           <li><a class="dropdown-item" href="/drop-down-menu/Core-Principles.html"><i class="fa-solid fa-angle-right me-2"></i> Core Principles</a></li>

@@ -131,7 +131,7 @@
           <div class="row justify-content-center align-items-center g-4 mt-4">
             <!-- card 1 -->
             <div class="col-xl-4 col-sm-12 col-md-6 ">
-              <a href="/drop-down-menu/View-detail01.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail01')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-01.jpg')}}" class="card-img-top rounded-0" alt="...">
@@ -147,7 +147,7 @@
             </div>
             <!-- card 2 -->
             <div class="col-xl-4 col-sm-12 col-md-6 ">
-              <a href="/drop-down-menu/View-detail02.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail02')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-02.jpg')}}" class="card-img-top rounded-0" alt="...">
@@ -166,7 +166,7 @@
             </div>
             <!-- card 3 -->
             <div class="col-xl-4 col-sm-12 col-md-6 ">
-              <a href="/drop-down-menu/View-detail02.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail01')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-03.jpg')}}" class="card-img-top rounded-0" alt="...">
@@ -182,7 +182,7 @@
             </div>
             <!-- card 4 -->
             <div class="col-xl-4 col-sm-12 col-md-6">
-              <a href="/drop-down-menu/View-detail02.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail02')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-04.jpg')}}" class="card-img-top rounded-0" alt="...">
@@ -197,7 +197,7 @@
             </div>
             <!-- card 5 -->
             <div class="col-xl-4 col-sm-12 col-md-6">
-              <a href="/drop-down-menu/View-detail02.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail01')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-05.jpg')}}" class="card-img-top rounded-0" alt="...">
@@ -213,7 +213,7 @@
             </div>
             <!-- card 6 -->
             <div class="col-xl-4 col-sm-12 col-md-6">
-              <a href="/drop-down-menu/View-detail02.html" class="card rounded-0 text-decoration-none">
+              <a href="{{route('ViewDetail02')}}" class="card rounded-0 text-decoration-none">
                 <div class="card-img">
                   <div class="card-img-hvr">
                     <img src="{{ asset('assets/img/Card/card-img-06.jpg')}}" class="card-img-top rounded-0" alt="...">
