@@ -113,7 +113,6 @@ $route_prefix = $route_name[0];
                                         <li class="sub-dropdown-hvr pb-3"><a href="{{ route('committess.term-of-reference') }}" class="text-decoration-none text-dark {{ isset($route_name[1]) && $route_name[1] == 'term-of-reference' ? 'active' : '' }}">
                                                 CCC-OC Terms of Reference</a> </li>
                                     </ul>
-
                                     <!-- end sub-dropdown -->
                                 </li>
                             </ul>

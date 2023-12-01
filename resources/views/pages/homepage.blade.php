@@ -12,13 +12,25 @@
                 <div class="bg-control-text d-flex align-items-baseline">
                   <div class="col-11 swiper-slide-text mt-5 ms-4 top-0">
                     <h5 class="fw-bold text-white text-start ps-3">His Excellency Hem Vanndy, Chair of CCC</h5><br>
+                    <p class="ps-3 px-4 fs-6 text-start text-white ">His Excellency Hem Vanndy chaired the Country Dialogue (on 22-23 January 2020 at Phnom Penh Hotel), the open and inclusive forum for all stakeholders, communities, CSOs, donors.</p>
+                  </div>
+                </div>
+                <div class="col-7 swiper-slide-img">
+                  <img src="{{ asset('assets/img/Slider/img-01-slide.jpg')}}" alt="" >
+                </div>
+              </div>
+
+            <div class="swiper-slide d-flex d-lg-flex justify-content-between ">
+                <div class="bg-control-text d-flex align-items-baseline">
+                  <div class="col-11 swiper-slide-text mt-5 ms-4 top-0">
+                    <h5 class="fw-bold text-white text-start ps-3">His Excellency Hem Vanndy, Chair of CCC</h5><br>
                     <p class="ps-3 px-4 fs-6 text-start text-white ">His Excellency Hem Vanndy chaired the Country Dialogue (on 22-23 January 2020 at Phnom Penh Hotel), the open and inclusive forum for all stakeholders, communities, CSOs, donors and DPs to develop new Funding Request Applications for HIV/AIDS, Tuberculosis and Resilient and Sustainable System for Health in Cambodia for the period of 2021-2023.</p>
                   </div>
                 </div>
                 <div class="col-7 swiper-slide-img">
                   <img src="{{ asset('assets/img/Slider/img-02-slide.jpg')}}" alt="" >
                 </div>
-              </div>
+            </div>
 
             <div class="swiper-slide d-flex d-lg-flex justify-content-between ">
                 <div class="bg-control-text d-flex align-items-baseline">
@@ -29,18 +41,6 @@
                 </div>
                 <div class="col-7 swiper-slide-img">
                   <img src="{{ asset('assets/img/Slider/img-03-slide.jpg')}}" alt="" >
-                </div>
-              </div>
-
-              <div class="swiper-slide d-flex d-lg-flex justify-content-between ">
-                <div class="bg-control-text d-flex align-items-baseline">
-                  <div class="col-11 swiper-slide-text mt-5 ms-4 top-0">
-                    <h5 class="fw-bold text-white text-start ps-3">His Excellency Hem Vanndy, Chair of CCC</h5><br>
-                    <p class="ps-3 px-4 fs-6 text-start text-white ">His Excellency Hem Vanndy chaired the Country Dialogue (on 22-23 January 2020 at Phnom Penh Hotel), the open and inclusive forum for all stakeholders, communities, CSOs, donors.</p>
-                  </div>
-                </div>
-                <div class="col-7 swiper-slide-img">
-                  <img src="{{ asset('assets/img/Slider/img-01-slide.jpg')}}" alt="" >
                 </div>
               </div>
             </div>
@@ -326,6 +326,6 @@
           enabled: true,
         },
       });
-      AOS.init();
+      // AOS.init();
     </script>
 @endsection

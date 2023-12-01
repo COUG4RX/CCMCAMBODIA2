@@ -1,27 +1,27 @@
-        var swiper = new Swiper(".mySwiper", {
-          slidesPreview: 1,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        loop:true,
-        speed:1000,
-        centeredSlides: true,
-        autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-        },
-        keyboard: {
-          enabled: true,
-        },
-      });
+      //   var swiper = new Swiper(".mySwiper", {
+      //     slidesPreview: 1,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
+      //   loop:true,
+      //   speed:1000,
+      //   centeredSlides: true,
+      //   autoplay: {
+      //     delay: 5000,
+      //     disableOnInteraction: false,
+      //   },
+      //   keyboard: {
+      //     enabled: true,
+      //   },
+      // });
       document.getElementById('search1').addEventListener('click', function() {
         // Get the icon element
         var icon = document.getElementById('search1');
 
         // Check the current color
         var currentColor = window.getComputedStyle(icon).color;
-        console.log(currentColor);
+        // console.log(currentColor);
 
         // Change the color based on the current color
         if (currentColor == 'rgb(255, 255, 255)') {  // Change this to your desired color condition
@@ -36,7 +36,7 @@
 
         // Check the current color
         var currentColor = window.getComputedStyle(icon).color;
-        console.log(currentColor);
+        // console.log(currentColor);
 
         // Change the color based on the current color
         if (currentColor == 'rgb(255, 255, 255)') {  // Change this to your desired color condition

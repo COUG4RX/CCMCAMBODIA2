@@ -995,7 +995,7 @@ a {
   border: none !important;
 }
 .dropdown-offcanvas a {
-  color: #434041 !important;
+  color: #434041;
   text-decoration: none;
 }
 .dropdown-menu-offcanvas {
