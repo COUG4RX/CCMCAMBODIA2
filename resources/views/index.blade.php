@@ -14,7 +14,7 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- bootstrap library -->
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!-- Animation on scroll  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Animated CSS  -->
@@ -22,7 +22,7 @@
     <!-- style.css  -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <!-- fontawesome -->
-    <link rel="stylesheet" href="{{ asset('assets/fontawesome/fontawesome/css/all.css')}} ">
+    <link rel="stylesheet" href="{{ asset('assets/fontawesome/fontawesome/css/all.css')}} "> 
     <!-- hover-master  -->
     <link rel="stylesheet" href="{{ asset('assets/Hover-master/css/hover.css')}}">
     <!-- animation on scroll  -->
@@ -31,7 +31,6 @@
 </head>
 <body>
     @yield('index')
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js link  -->

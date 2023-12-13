@@ -11,6 +11,7 @@
               <div class="customize-hr d-flex justify-content-center">
                 <div class="hr mt-4"></div>
               </div>
+
               <ol class="mt-5 ms-5 text-secondary fs-5">
                 <li>
                     <span>The CCC shall establish a Secretariat headed by a Secretariat Manager. The Secretariat Manager and the CCC Secretariat shall execute the day-to-day functions as delegated by the CCC.</span>
@@ -58,6 +59,7 @@
                 <span class="fw-bold text-color-custom">Harmonization:</span>
                 <span class="text-secondary">Assist CCC in liaising with national and non-governmental and development partners to ensure harmonization and alignment of the GF funded activities with the efforts of other stakeholders.</span><br><br><br>
             </div>
+            
         </div>
     </div>
   </section>

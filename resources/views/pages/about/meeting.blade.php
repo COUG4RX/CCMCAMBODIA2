@@ -113,9 +113,4 @@
     </div>
   </section>
 
-  <!-- Offcanvas  -->
-  
-
-
-
 @endsection
